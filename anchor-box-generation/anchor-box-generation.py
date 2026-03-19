@@ -19,7 +19,5 @@ def generate_anchors(feature_size, image_size, scales, aspect_ratios):
                         cx - w / 2,
                         cy - h / 2,
                         cx + w / 2,
-                        cy + h / 2
-                    ])
-
+                        cy + h / 2 ])
     return anchors
