@@ -1,7 +1,8 @@
 import numpy as np
 def generate_anchors(feature_size, image_size, scales, aspect_ratios):
     """
-    Generate anchor boxes for object detection.
+    Generate anchor boxes in image coordinates.
+    Returns list of [x1, y1, x2, y2] boxes.
     """
     stride = image_size / feature_size
     anchors = []
