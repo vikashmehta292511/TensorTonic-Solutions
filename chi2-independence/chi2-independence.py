@@ -4,6 +4,7 @@ def chi2_independence(C):
     """
     Compute chi-square test statistic and expected frequencies.
     """
+    
     # Write code here
     C = np.asarray(C, dtype=float)
     total = C.sum()
