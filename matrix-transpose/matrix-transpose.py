@@ -11,5 +11,5 @@ def matrix_transpose(A):
     for i in range(N):
         for j in range(M):
             AT[j, i] = A[i, j]
-    return AT
+    return AT 
     pass
