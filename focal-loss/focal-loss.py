@@ -5,6 +5,7 @@ def focal_loss(p, y, gamma=2.0):
     Compute Focal Loss for binary classification.
     """
     # Write code here
+    
     p = np.clip(np.asarray(p, dtype=float), 1e-15, 1 - 1e-15)
     y = np.asarray(y, dtype=float)
 
