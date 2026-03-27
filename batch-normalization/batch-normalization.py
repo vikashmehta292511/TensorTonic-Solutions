@@ -5,6 +5,7 @@ def batch_norm_forward(x, gamma, beta, eps=1e-5):
     Forward-only BatchNorm for (N,D) or (N,C,H,W).
     """
     # Write code here
+    
     x     = np.asarray(x,     dtype=float)
     gamma = np.asarray(gamma, dtype=float)
     beta  = np.asarray(beta,  dtype=float)
