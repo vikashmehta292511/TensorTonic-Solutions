@@ -1,11 +1,14 @@
+
 import numpy as np
 
+
 def apply_homogeneous_transform(T, points):
+    
     """
     Apply 4x4 homogeneous transform T to 3D point(s).
     """
+    
     # Your code here
-
     
     T      = np.asarray(T,      dtype=float)
     points = np.asarray(points, dtype=float)
