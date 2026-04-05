@@ -9,6 +9,19 @@ def k_means_assignment(points, centroids):
     points    = np.asarray(points,    dtype=float)
     centroids = np.asarray(centroids, dtype=float)
     
-    sq_dists = ((points[:, np.newaxis, :] - centroids[np.newaxis, :, :]) ** 2).sum(axis=2)
+    assignments = []
     
-    return np.argmin(sq_dists, axis=1).tolist()
+    for point in points:
+        best_idx  = 0
+        best_dist = float('inf')
+        
+        for idx, centroid in enumerate(centroids):
+            dist = np.sum((point - centroid) ** 2)
+            
+            if dist < best_dist:
+                best_dist = dist
+                best_idx  = idx
+        
+        assignments.append(best_idx)
+    
+    return assignments
