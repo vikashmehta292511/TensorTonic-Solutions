@@ -7,11 +7,19 @@ def pca_projection(X, k):
     # Write code here
 
     X = np.asarray(X, dtype=float)
-    X_centered = X - X.mean(axis=0)
-    cov = X_centered.T @ X_centered / (len(X) - 1)
-
+    
+    mean = X.mean(axis=0)
+    X_centered = X - mean
+    
+    n_samples = len(X)
+    cov = X_centered.T @ X_centered / (n_samples - 1)
+    
     eigenvalues, eigenvectors = np.linalg.eigh(cov)
     
-    top_k = eigenvectors[:, ::-1][:, :k]
+    sorted_indices = np.argsort(eigenvalues)[::-1]
+    top_k_indices = sorted_indices[:k]
+    top_k_components = eigenvectors[:, top_k_indices]
     
-    return (X_centered @ top_k).tolist()
+    X_projected = X_centered @ top_k_components
+    
+    return X_projected.tolist()
