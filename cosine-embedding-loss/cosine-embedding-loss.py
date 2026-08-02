@@ -1,4 +1,4 @@
-import numpy as np
+import math
 
 def cosine_embedding_loss(x1, x2, label, margin):
     """
@@ -6,12 +6,8 @@ def cosine_embedding_loss(x1, x2, label, margin):
     """
     # Write code here
     
-    x1 = np.asarray(x1, dtype=float)
-    x2 = np.asarray(x2, dtype=float)
-
-    cos_sim = np.dot(x1, x2) / (np.linalg.norm(x1) * np.linalg.norm(x2))
-
-    if label == 1:
-        return float(1 - cos_sim)
-    else:
-        return float(max(0.0, cos_sim - margin))
+    dot = sum(a*b for a,b in zip(x1, x2))
+    n1 = math.sqrt(sum(a*a for a in x1))
+    n2 = math.sqrt(sum(b*b for b in x2))
+    cos_sim = dot / (n1 * n2)
+    return 1.0 - cos_sim if label == 1 else max(0.0, cos_sim - margin)
