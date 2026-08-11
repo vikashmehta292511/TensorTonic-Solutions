@@ -11,12 +11,12 @@ TensorTonic is a platform where you can implement core algorithms of Machine Lea
 This repository contains my personal solutions to these problems, automatically synchronized from the platform.
 
 <!-- tensortonic:start -->
-# Vikash's TensorTonic Solutions
+# Vikash Kumar's TensorTonic Solutions
 
 Verified machine learning implementations completed on [TensorTonic](https://www.tensortonic.com).
 
 <p align="center">
-  <img src="https://www.tensortonic.com/api/badge/vikash.svg" alt="TensorTonic Verified Solutions" width="100%" />
+  <img src="https://www.tensortonic.com/api/badge/vkshdev.svg" alt="TensorTonic Verified Solutions" width="100%" />
 </p>
 
 | Problem | Description | Link |
@@ -83,6 +83,7 @@ Verified machine learning implementations completed on [TensorTonic](https://www
 | Hit Rate at K | Calculate recommendation hit rate at K by checking whether each user's relevant items appear in top-ranked results. | https://www.tensortonic.com/problems/hit-rate-at-k |
 | Apply 4×4 Homogeneous Transform | Apply a 4x4 homogeneous transformation matrix to 3D points using rotation, translation, and homogeneous coordinates. | https://www.tensortonic.com/problems/homogeneous-transform |
 | Implement Huber Loss | Compute Huber loss with quadratic errors near zero and linear penalties beyond a configurable threshold. | https://www.tensortonic.com/problems/huber-loss |
+| Impute Missing Values (mean/median) | Impute missing numeric values column-wise with either the mean or median while leaving observed values unchanged. | https://www.tensortonic.com/problems/impute-missing |
 | Implement InfoNCE Loss | Compute InfoNCE contrastive loss from query and key embeddings using temperature-scaled similarities. | https://www.tensortonic.com/problems/info-nce-loss |
 | Compute Information Gain for a Split | Compute information gain for a decision-tree split from parent entropy and weighted child entropies. | https://www.tensortonic.com/problems/information-gain |
 | Interaction Features | Create pairwise interaction features by multiplying selected input columns while preserving original samples. | https://www.tensortonic.com/problems/interaction-features |
@@ -171,5 +172,5 @@ Verified machine learning implementations completed on [TensorTonic](https://www
 | Xavier Initialization | Scale raw weights into the Xavier uniform range using a bound derived from fan-in and fan-out. | https://www.tensortonic.com/problems/xavier-initialization |
 | Implement z-Score Standardization | Standardize NumPy features to zero mean and unit variance with explicit handling for constant columns. | https://www.tensortonic.com/problems/zscore-standardization |
 
-View my verified ML profile: [TensorTonic profile](https://www.tensortonic.com/profile/vikash)
+View my verified ML profile: [TensorTonic profile](https://www.tensortonic.com/profile/vkshdev)
 <!-- tensortonic:end -->
